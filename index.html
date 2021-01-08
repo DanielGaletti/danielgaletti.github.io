@@ -339,7 +339,7 @@
         
         <a href="https://help.gympass.com/hc/pt-br/requests/new?ticket_form_id=360004793573" onClick=goForm()><button>R PARA FORMS GYMPAS ================</button></a>
     </span>
-        <textarea rows="5" cols="33" id="email">  </textarea>
+        <textarea rows="5" cols="33" id="emailLogado">  </textarea>
     </div>
     
       
@@ -348,6 +348,7 @@
     function goForm(){
     console.log("a");
     window.history.pushState({ prevUrl: window.location.href }, null, "https://help.gympass.com/hc/en-us/requests/new?ticket_form_id=360004793573")
+    location.hash = document.getElementById("emailLogado")
     }
     </script>
 
